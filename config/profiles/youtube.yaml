@@ -1,0 +1,28 @@
+# Perfil optimizado para YouTube horizontal (16:9)
+
+project:
+  format: "16:9"
+  target_resolution:
+    width: 1920
+    height: 1080
+  edit_mode: "youtube"
+
+silence:
+  analyze_above_ms: 350
+  suggest_cut_above_ms: 650
+  aggressive_cut_above_ms: 1200
+  padding_ms: 120
+
+editorial:
+  pacing_mode: "natural"
+  hook_min_score: 0.65
+  max_zoom_scale: 1.08
+  min_zoom_duration_ms: 1000
+  zoom_cooldown_ms: 3000
+
+subtitles:
+  enabled: true
+  style: "clean_lower_third"
+  font_size: 40
+  safe_area_bottom_pct: 0.10
+  safe_area_top_pct: 0.05

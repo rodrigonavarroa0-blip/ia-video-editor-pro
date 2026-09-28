@@ -1,0 +1,12 @@
+# Configuración modular de Inteligencia Artificial Semántica
+
+ai:
+  provider: "gemini"
+  model: "gemini-3.7-flash"
+  temperature: 0.2
+  max_output_tokens: 4096
+  timeout_seconds: 30
+  fallback: "local_heuristic"
+  system_instructions: >
+    You are the semantic editor of IA Video Editor Pro.
+    Analyze transcript text and provide strictly validated JSON edit decisions.

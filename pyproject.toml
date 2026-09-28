@@ -1,0 +1,44 @@
+[project]
+name = "ia-video-editor-pro"
+version = "0.1.0"
+description = "Professional Local-First AI Video Editor Engine"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.7.0",
+    "pyyaml>=6.0.1",
+    "typer>=0.12.0",
+    "rich>=13.7.0",
+    "numpy>=1.24.0",
+    "scipy>=1.11.0",
+    "pyloudnorm>=0.1.1",
+    "imageio-ffmpeg>=0.5.1",
+    "google-genai>=0.1.0",
+]
+
+[project.optional-dependencies]
+ai = [
+    "faster-whisper>=1.0.0",
+    "opencv-python>=4.9.0",
+    "mediapipe>=0.10.0",
+]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]
+
+[project.scripts]
+iva = "app.cli.main:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+pythonpath = ["."]

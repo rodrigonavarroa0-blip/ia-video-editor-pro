@@ -1,0 +1,28 @@
+# Perfil Corporate / Empresarial (16:9)
+
+project:
+  format: "16:9"
+  target_resolution:
+    width: 1920
+    height: 1080
+  edit_mode: "corporate"
+
+silence:
+  analyze_above_ms: 400
+  suggest_cut_above_ms: 800
+  aggressive_cut_above_ms: 1500
+  padding_ms: 150
+
+editorial:
+  pacing_mode: "corporate_clean"
+  hook_min_score: 0.60
+  max_zoom_scale: 1.05
+  min_zoom_duration_ms: 1200
+  zoom_cooldown_ms: 4000
+
+subtitles:
+  enabled: true
+  style: "corporate_clean"
+  font_size: 38
+  safe_area_bottom_pct: 0.08
+  safe_area_top_pct: 0.05

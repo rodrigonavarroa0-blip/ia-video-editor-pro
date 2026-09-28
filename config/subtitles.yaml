@@ -1,0 +1,30 @@
+# Configuración modular de Subtítulos y Tipografía Cinética
+
+subtitles:
+  enabled: true
+  engine: "libass"
+  default_style: "bold_pop"
+  font_family: "Arial Black"
+  font_size: 48
+  primary_color: "&H00FFFFFF"
+  highlight_color: "&H0000FFFF"
+  outline_color: "&H00000000"
+  outline_width: 3.0
+  shadow_width: 1.0
+  max_words_per_line: 4
+  safe_areas:
+    tiktok:
+      top: 0.12
+      bottom: 0.20
+      left: 0.05
+      right: 0.15
+    reels:
+      top: 0.10
+      bottom: 0.18
+      left: 0.05
+      right: 0.12
+    shorts:
+      top: 0.10
+      bottom: 0.20
+      left: 0.05
+      right: 0.12

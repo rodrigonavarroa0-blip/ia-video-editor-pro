@@ -1,0 +1,31 @@
+# Configuración modular de Exportación y Codecs
+
+export:
+  hardware_acceleration: "auto"
+  video_codec: "h264_videotoolbox"
+  video_codec_fallback: "libx264"
+  audio_codec: "aac"
+  audio_bitrate: "192k"
+  pixel_format: "yuv420p"
+  crf: 20
+  presets:
+    tiktok_9x16:
+      width: 1080
+      height: 1920
+      fps: 30
+      bitrate: "8000k"
+    reels_9x16:
+      width: 1080
+      height: 1920
+      fps: 30
+      bitrate: "8000k"
+    youtube_16x9:
+      width: 1920
+      height: 1080
+      fps: 30
+      bitrate: "12000k"
+    square_1x1:
+      width: 1080
+      height: 1080
+      fps: 30
+      bitrate: "6000k"

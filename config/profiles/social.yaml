@@ -1,0 +1,28 @@
+# Perfil optimizado para TikTok / Instagram Reels / YouTube Shorts (9:16)
+
+project:
+  format: "9:16"
+  target_resolution:
+    width: 1080
+    height: 1920
+  edit_mode: "social"
+
+silence:
+  analyze_above_ms: 200
+  suggest_cut_above_ms: 400
+  aggressive_cut_above_ms: 800
+  padding_ms: 50
+
+editorial:
+  pacing_mode: "fast"
+  hook_min_score: 0.75
+  max_zoom_scale: 1.14
+  min_zoom_duration_ms: 600
+  zoom_cooldown_ms: 1500
+
+subtitles:
+  enabled: true
+  style: "kinetic_bold"
+  font_size: 54
+  safe_area_bottom_pct: 0.22
+  safe_area_top_pct: 0.12

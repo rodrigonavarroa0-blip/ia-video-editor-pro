@@ -1,0 +1,28 @@
+# Perfil Podcast (16:9 / 9:16)
+
+project:
+  format: "16:9"
+  target_resolution:
+    width: 1920
+    height: 1080
+  edit_mode: "podcast"
+
+silence:
+  analyze_above_ms: 500
+  suggest_cut_above_ms: 1000
+  aggressive_cut_above_ms: 2000
+  padding_ms: 200
+
+editorial:
+  pacing_mode: "conversational"
+  hook_min_score: 0.50
+  max_zoom_scale: 1.06
+  min_zoom_duration_ms: 1500
+  zoom_cooldown_ms: 5000
+
+subtitles:
+  enabled: true
+  style: "minimal_lower"
+  font_size: 36
+  safe_area_bottom_pct: 0.10
+  safe_area_top_pct: 0.05

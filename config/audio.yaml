@@ -1,0 +1,22 @@
+# Configuración modular de Procesamiento de Audio y Mezcla
+
+audio:
+  target_lufs: -14.0
+  true_peak: -1.0
+  high_pass_filter_hz: 80
+  noise_reduction_strength: "moderate"
+  compression:
+    threshold_db: -20.0
+    ratio: 3.5
+    attack_ms: 15.0
+    release_ms: 100.0
+  de_esser:
+    frequency_hz: 6000
+    threshold_db: -18.0
+  limiter:
+    ceiling_db: -1.0
+  ducking:
+    enabled: true
+    duck_gain_db: -8.0
+    attack_ms: 150
+    release_ms: 600

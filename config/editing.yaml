@@ -1,0 +1,27 @@
+# Configuración modular de Edición y Pacing
+
+silence:
+  analyze_above_ms: 250
+  suggest_cut_above_ms: 500
+  aggressive_cut_above_ms: 1000
+  padding_ms: 80
+
+zoom:
+  max_scale: 1.14
+  min_duration_ms: 700
+  cooldown_ms: 1800
+
+speech_rate:
+  min_wpm: 110
+  max_wpm: 190
+  target_wpm: 150
+
+hook:
+  min_score: 0.70
+  formula:
+    clarity_weight: 0.25
+    novelty_weight: 0.20
+    specificity_weight: 0.20
+    tension_weight: 0.15
+    benefit_weight: 0.10
+    speed_weight: 0.10
